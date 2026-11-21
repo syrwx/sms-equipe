@@ -37,5 +37,18 @@
     ],
     "wa": "22366759139",
     "photo": "diakite.jpg"
+  },
+  {
+    "slug": "koita",
+    "first": "Amadou Bakary",
+    "last": "KOITA",
+    "role": "IT – LOGISTIQUE",
+    "email": "ABKoita@senomining.com",
+    "tel": [
+      ["+22366759139", "+223 66 75 91 39"],
+      ["+22376911073", "+223 76 91 10 73"]
+    ],
+    "wa": "22366759139",
+    "photo": "koita.jpg"
   }
 ]
