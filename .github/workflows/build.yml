@@ -1,0 +1,42 @@
+name: Construire le site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "photos/**"
+      - "assets/**"
+      - "scripts/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install pillow
+
+      - name: Générer le site
+        run: python3 scripts/build_site.py
+
+      - name: Publier le site généré
+        run: |
+          git config user.name "sms-site-bot"
+          git config user.email "noreply@anthropic.com"
+          git add -f site
+          if git diff --cached --quiet; then
+            echo "Rien à publier."
+          else
+            git commit -m "Reconstruction automatique du site"
+            git push
+          fi

@@ -1,0 +1,37 @@
+{
+  "name": "Seno Mining Services",
+  "short": "SMS",
+  "tagline": "Forage, réhabilitation et formation au service des mines du Mali",
+  "intro": "Seno Mining Services accompagne les projets miniers et de travaux publics depuis 2013, avec des solutions fiables et respectueuses de l'environnement.",
+  "tel": [
+    ["+22366759139", "+223 66 75 91 39"],
+    ["+22376911073", "+223 76 91 10 73"]
+  ],
+  "email": "info@senomining.com",
+  "web": "https://www.senomining.com",
+  "addr": "Niamana, près de l'ancien poste, avant les logements sociaux de N'Tabocoro — Bamako, Mali",
+  "social": [
+    ["LinkedIn", "https://www.linkedin.com/company/seno-mining-services/"],
+    ["Facebook", "https://www.facebook.com/share/1KVnLRoWUf/"],
+    ["TikTok", "https://www.tiktok.com/@seno.mining.servi"]
+  ],
+  "stats": [
+    ["13+", "ans d'expérience"],
+    ["160+", "projets réussis"],
+    ["98 %", "de clients satisfaits"],
+    ["24/7", "support réactif"]
+  ],
+  "services": [
+    ["Forage", "Solutions de forage pour les projets miniers.", "drill"],
+    ["Réhabilitation", "Remise en état des sites miniers.", "leaf"],
+    ["Assainissement", "Des environnements de travail sûrs et sains.", "drop"],
+    ["Formations", "Conduite d'engins de chantier, pour développer les compétences locales.", "cap"],
+    ["Placement de talents", "Des professionnels qualifiés pour la mine et le BTP.", "people"]
+  ],
+  "timeline": [
+    ["2013", "Création de l'entreprise, avec une ambition d'excellence dans le secteur minier."],
+    ["2016", "Élargissement des services vers des solutions innovantes et durables."],
+    ["2019", "Lancement des formations à la conduite d'engins de chantier."],
+    ["2023", "Engagement pour des pratiques respectueuses de l'environnement."]
+  ]
+}

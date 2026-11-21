@@ -1,0 +1,5 @@
+/*.vcf
+  Content-Type: text/vcard; charset=utf-8
+  Content-Disposition: attachment
+/photos/*
+  Cache-Control: public, max-age=86400

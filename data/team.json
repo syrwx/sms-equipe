@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "traore",
+    "first": "Mamadou",
+    "last": "TRAORE",
+    "role": "GENERAL MANAGER",
+    "email": "MTraore@senomining.com",
+    "tel": [
+      ["+22366759139", "+223 66 75 91 39"],
+      ["+22376911073", "+223 76 91 10 73"]
+    ],
+    "wa": "22366759139",
+    "photo": "traore.jpg"
+  },
+  {
+    "slug": "sissoko",
+    "first": "Mari Mady",
+    "last": "SISSOKO",
+    "role": "ASSISTANTE DE DIRECTION",
+    "email": "MMSissoko@senomining.com",
+    "tel": [
+      ["+22366759139", "+223 66 75 91 39"],
+      ["+22376911073", "+223 76 91 10 73"]
+    ],
+    "wa": "22366759139",
+    "photo": "sissoko.jpg"
+  },
+  {
+    "slug": "diakite",
+    "first": "Daouda",
+    "last": "DIAKITE",
+    "role": "ASSISTANT RH",
+    "email": "DDiakite@senomining.com",
+    "tel": [
+      ["+22366759139", "+223 66 75 91 39"],
+      ["+22376911073", "+223 76 91 10 73"]
+    ],
+    "wa": "22366759139",
+    "photo": "diakite.jpg"
+  }
+]
