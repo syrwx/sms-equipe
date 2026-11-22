@@ -240,6 +240,11 @@ def resize_photo(src, dst, box=(520, 600)):
     im.crop((x0, y0, x0 + tw, y0 + th)).save(dst, quality=87)
 
 
+def inline_css(html):
+    # Style intégré dans chaque page : le site s'affiche bien chez n'importe quel hébergeur
+    return html.replace('<link rel="stylesheet" href="assets/style.css">', '<style>' + CSS + '</style>')
+
+
 def main():
     if os.path.exists(SITE):
         shutil.rmtree(SITE)
@@ -247,11 +252,11 @@ def main():
     os.makedirs(os.path.join(SITE, 'photos'))
     open(os.path.join(SITE, 'assets', 'style.css'), 'w').write(CSS)
     shutil.copy(os.path.join(ROOT, 'assets', 'logo.png'), os.path.join(SITE, 'assets', 'logo.png'))
-    open(os.path.join(SITE, 'index.html'), 'w', encoding='utf-8').write(index())
+    open(os.path.join(SITE, 'index.html'), 'w', encoding='utf-8').write(inline_css(index()))
     for m in TEAM:
         src_photo = os.path.join(ROOT, 'photos', m['photo'])
         resize_photo(src_photo, os.path.join(SITE, 'photos', m['photo']))
-        open(os.path.join(SITE, f"{m['slug']}.html"), 'w', encoding='utf-8').write(person(m))
+        open(os.path.join(SITE, f"{m['slug']}.html"), 'w', encoding='utf-8').write(inline_css(person(m)))
         open(os.path.join(SITE, f"{m['slug']}.vcf"), 'w', newline='', encoding='utf-8').write(vcard(m))
     open(os.path.join(SITE, '_headers'), 'w').write(
         "/*.vcf\n  Content-Type: text/vcard; charset=utf-8\n  Content-Disposition: attachment\n"
