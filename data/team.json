@@ -13,6 +13,19 @@
     "photo": "traore.jpg"
   },
   {
+    "slug": "sory-traore",
+    "first": "Sory Ibrahima",
+    "last": "TRAORE",
+    "role": "DIRECTEUR DES OPÉRATIONS",
+    "email": "SITraore@senomining.com",
+    "tel": [
+      ["+22366759139", "+223 66 75 91 39"],
+      ["+22375888840", "+223 75 88 88 40"]
+    ],
+    "wa": "22366759139",
+    "photo": "sory-traore.jpg"
+  },
+  {
     "slug": "sissoko",
     "first": "Mari Mady",
     "last": "SISSOKO",
